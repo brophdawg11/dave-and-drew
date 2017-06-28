@@ -1,0 +1,11 @@
+{
+    "verbose": true,
+    "ext": "*.md,*.js,*.json,*.scss,*.nunjucks,*.gif,*.png,*.jpg",
+    "watch": [
+        "assets/*",
+        "contents/*",
+        "src/*",
+        "templates/*",
+        "build.js"
+    ]
+}

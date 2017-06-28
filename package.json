@@ -1,0 +1,56 @@
+{
+  "name": "dave-and-drew",
+  "version": "1.0.0",
+  "description": "Dave and Drew's Wedding Website",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js --prod",
+    "serve": "node index.js --serve --debug",
+    "nodemon": "./node_modules/.bin/nodemon index.js --serve",
+    "nodemon-debug": "./node_modules/.bin/nodemon index.js --serve --debug",
+    "clean": "rm -rf output/",
+    "nuke": "npm run clean && rm -rf node_modules && rm -rf .icon_cache && npm install",
+    "lint": "eslint src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brophdawg11/dave-and-drew.git"
+  },
+  "author": "matt@brophy.org",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brophdawg11/dave-and-drew/issues"
+  },
+  "homepage": "https://github.com/brophdawg11/dave-and-drew#readme",
+  "dependencies": {
+    "assets": "2.1.0",
+    "debug": "2.6.8",
+    "lodash": "4.17.4",
+    "marked": "0.3.6",
+    "metalsmith": "2.3.0",
+    "metalsmith-assets": "0.1.0",
+    "metalsmith-autoprefixer": "1.1.1",
+    "metalsmith-debug": "1.1.0",
+    "metalsmith-icons": "0.5.0",
+    "metalsmith-ignore": "0.1.2",
+    "metalsmith-layouts": "1.8.1",
+    "metalsmith-markdown": "0.2.1",
+    "metalsmith-metadata-directory": "1.0.1",
+    "metalsmith-page-titles": "1.0.2",
+    "metalsmith-permalinks": "0.5.0",
+    "metalsmith-sass": "1.3.0",
+    "metalsmith-serve": "0.0.7",
+    "metalsmith-typography": "0.1.1",
+    "nunjucks": "3.0.1",
+    "yargs": "8.0.2"
+  },
+  "devDependencies": {
+    "eslint": "3.12.2",
+    "eslint-config-airbnb": "13.0.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "2.2.3",
+    "eslint-plugin-react": "6.8.0",
+    "nodemon": "1.11.0",
+    "stylelint-config-standard": "16.0.0"
+  }
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <base href="/" />
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>{% block title %}{{ title }}{% endblock %}</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/icons.css" />
+        <link rel="stylesheet" href="/css/reset.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+
+        <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+    </body>
+</html>

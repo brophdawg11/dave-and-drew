@@ -1,0 +1,74 @@
+{% extends "templates/layouts/layout.nunjucks" %}
+
+{% block body %}
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var sweetScroll = new SweetScroll({
+                updateURL: true,
+                stopPropagation: false
+            });
+        }, false);
+    </script>
+
+    <div class="c-site-wrap">
+        <aside class="c-aside">
+            <nav class="c-nav">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item">
+                        <a class="c-nav__link" href="#top" data-scroll>
+                            <span class="c-nav__title">Top</span>
+                        </a>
+                    </li>
+                    <li class="c-nav__item">
+                        <a class="c-nav__link" href="#us" data-scroll>
+                            <span class="c-nav__title">Us</span>
+                        </a>
+                    </li>
+                    <li class="c-nav__item">
+                        <a class="c-nav__link" href="#wedding" data-scroll>
+                            <span class="c-nav__title">Wedding</span>
+                        </a>
+                    </li>
+                    <li class="c-nav__item">
+                        <a class="c-nav__link" href="#directions" data-scroll>
+                            <span class="c-nav__title">Directions</span>
+                        </a>
+                    </li>
+                    <li class="c-nav__item">
+                        <a class="c-nav__link" href="#registry" data-scroll>
+                            <span class="c-nav__title">Registry</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="c-section c-section--head" id="top">
+        </section>
+
+        <section class="c-section c-section--entry" id="us">
+            <h1>Dave & Drew</h1>
+        </section>
+
+        <section class="c-section c-section--entry" id="wedding">
+            <h1>The Wedding</h1>
+        </section>
+
+        <section class="c-section c-section--entry" id="directions">
+            <h1>Getting There</h1>
+        </section>
+
+        <section class="c-section c-section--entry" id="registry">
+            <h1>Registry</h1>
+        </section>
+
+        <footer class="c-footer">
+            <p class="c-footer__hashtag u-bold">
+                #daveanddrew
+            </p>
+            <p class="c-footer__copyright">
+                &copy; 2017 Dave and Drew
+            </p>
+        </footer>
+    </div>
+{% endblock %}
