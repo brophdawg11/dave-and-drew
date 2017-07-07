@@ -42,7 +42,7 @@ builder =
         // Read all input from contents/
         .source('./contents')
         // Write all output to output/
-        .destination('./output')
+        .destination('./docs')
         // Workaround for metalsmith.metadata issue on watching files
         // See: https://github.com/segmentio/metalsmith-collections/issues/27#issuecomment-266647074
         .use(metadataPatch(metadataOpts))
