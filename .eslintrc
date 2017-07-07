@@ -1,6 +1,11 @@
 {
     "extends": "airbnb",
 
+    "globals": {
+        "document": true,
+        "$": true
+    },
+
     "rules": {
         "func-names": [ "error", "as-needed" ],
         "indent": [ "error", 4 ],

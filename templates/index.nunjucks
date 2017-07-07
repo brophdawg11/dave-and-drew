@@ -10,7 +10,7 @@
         }, false);
     </script>
 
-    <div class="c-site-wrap">
+    <div class="c-site-wrap" id="site-wrap">
         <aside class="c-aside">
             <nav class="c-nav">
                 <ul class="c-nav__list">
