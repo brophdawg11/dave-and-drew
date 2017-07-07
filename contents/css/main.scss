@@ -227,7 +227,7 @@ p {
 }
 
 .c-dave-and-drew {
-    background-image: url('/assets/background.jpg');
+    background-image: url(../assets/background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -273,31 +273,31 @@ p {
 
 @keyframes imageAnimation {
     0% {
-        background-image: url(assets/slideshow/DrewDave-103.jpg);
+        background-image: url(../assets/slideshow/DrewDave-103.jpg);
     }
 
     16% {
-        background-image: url(assets/slideshow/DrewDave-107.jpg);
+        background-image: url(../assets/slideshow/DrewDave-107.jpg);
     }
 
     33% {
-        background-image: url(assets/slideshow/DrewDave-108.jpg);
+        background-image: url(../assets/slideshow/DrewDave-108.jpg);
     }
 
     50% {
-        background-image: url(assets/slideshow/DrewDave-113.jpg);
+        background-image: url(../assets/slideshow/DrewDave-113.jpg);
     }
 
     66% {
-        background-image: url(assets/slideshow/DrewDave-121.jpg);
+        background-image: url(../assets/slideshow/DrewDave-121.jpg);
     }
 
     73% {
-        background-image: url(assets/slideshow/DrewDave-127.jpg);
+        background-image: url(../assets/slideshow/DrewDave-127.jpg);
     }
 
     100% {
-        background-image: url(assets/slideshow/DrewDave-103.jpg);
+        background-image: url(../assets/slideshow/DrewDave-103.jpg);
     }
 }
 
