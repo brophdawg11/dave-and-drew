@@ -151,13 +151,11 @@ p {
         border-radius: 50%;
         margin: $global-spacer 0;
 
-        &:focus,
-        &:active {
+        &.active {
             background-color: $sideNavLinks;
         }
 
-        &:focus,
-        &:active,
+        &.active,
         &:hover {
             .c-nav__title {
                 opacity: 1;
@@ -215,6 +213,7 @@ p {
 
         &:nth-of-type(2n+1) {
             background-color: $rotatingFontColor;
+            background-color: rgba($tan, 0.75);
             color: $rotatingBgColor;
         }
 
