@@ -1,6 +1,7 @@
 @import './reset';
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,800');
 
+// Named Colors
 $orange: #f28a49;
 $yellow: #f7e3b2;
 $pink: #e3967d;
@@ -10,15 +11,23 @@ $offwhite: #f8f8ec;
 $tan: #d7d7b8;
 $blue: #bdcdd0;
 $navy: #5d6b8c;
+$charcoal: #42403a;
 
 $global-spacer: 20px;
 $small: 0;
 $medium: 660px;
 $large: 1024px;
 
+// Semantic Colors
+$rotatingBgColor: $charcoal;
+$rotatingFontColor: $offwhite;
+$sideNavLinks: $offwhite;
+
+// Fonts
 //$header-font: 'Open Sans', Helvetica, sans-serif;
 $header-font: 'Lora', 'Times New Roman', serif;
 $body-font: 'Lora', 'Times New Roman', serif;
+
 
 * {
     box-sizing: border-box;
@@ -116,13 +125,13 @@ p {
         display: block;
         width: $global-spacer;
         height: $global-spacer;
-        border: 2px solid black;
+        border: 2px solid $sideNavLinks;
         border-radius: 50%;
         margin: $global-spacer 0;
 
         &:focus,
         &:active {
-            background-color: black;
+            background-color: $sideNavLinks;
         }
 
         &:focus,
@@ -136,7 +145,7 @@ p {
     }
 
     &__title {
-        color: black;
+        color: $sideNavLinks;
         text-decoration: none;
         display: inline-block;
         padding-right: 0;
@@ -175,13 +184,13 @@ p {
     &--entry {
 
         &:nth-of-type(2n) {
-            background-color: $navy;
-            color: $offwhite;
+            background-color: $rotatingBgColor;
+            color: $rotatingFontColor;
         }
 
         &:nth-of-type(2n+1) {
-            background-color: $offwhite;
-            color: $navy;
+            background-color: $rotatingFontColor;
+            color: $rotatingBgColor;
         }
 
     }
@@ -191,6 +200,6 @@ p {
 .c-footer {
     @include block-padding;
     text-align: center;
-    background-color: $navy;
-    color: $offwhite;
+    background-color: $rotatingBgColor;
+    color: $rotatingFontColor;
 }
