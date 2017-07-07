@@ -8,10 +8,11 @@ $pink: #e3967d;
 $brown: #57342d;
 $mint: #9dbfa4;
 $offwhite: #f8f8ec;
-$tan: #d7d7b8;
 $blue: #bdcdd0;
 $navy: #5d6b8c;
+
 $charcoal: #42403a;
+$tan: #807C68;
 
 $global-spacer: 20px;
 $small: 0;
@@ -51,30 +52,37 @@ h6 {
 h1 {
     font-size: 3rem;
     font-weight: 700;
+    padding-bottom: 1rem;
 }
 
 h2 {
     font-size: 2.25rem;
+    padding-bottom: 1rem;
 }
 
 h3 {
     font-size: 1.75rem;
+    padding-bottom: 1rem;
 }
 
 h4 {
     font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 h5 {
     font-size: 1.25rem;
+    padding-bottom: 1rem;
 }
 
 h6 {
     font-size: 1rem;
+    padding-bottom: 1rem;
 }
 
 p {
     padding-bottom: 1rem;
+    line-height: 1.4rem;
 }
 
 .u-bold {
@@ -82,9 +90,6 @@ p {
 }
 
 .c-site-wrap {
-    background-image: url('/assets/background.jpg');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
 }
 
 @mixin block-padding() {
@@ -113,6 +118,12 @@ p {
 }
 
 .c-nav {
+    display: none;
+
+    @media all and (min-width: $medium) {
+        display: block;
+    }
+
     &__list {
 
     }
@@ -146,6 +157,7 @@ p {
 
     &__title {
         color: $sideNavLinks;
+        white-space: nowrap;
         text-decoration: none;
         display: inline-block;
         padding-right: 0;
@@ -158,11 +170,12 @@ p {
 
 .c-section {
     @include block-padding;
-    height: 500px;
     text-align: center;
 
     &--head {
         height: 200px;
+        padding-left: 0;
+        padding-right: 0;
 
         @media all and (min-width: $medium * 0.75) {
             height: 300px;
@@ -182,6 +195,7 @@ p {
     }
 
     &--entry {
+        min-height: 500px;
 
         &:nth-of-type(2n) {
             background-color: $rotatingBgColor;
@@ -195,6 +209,44 @@ p {
 
     }
 
+    &__text {
+        padding-left: $global-spacer;
+        padding-right: $global-spacer;
+
+        @media all and (min-width: $medium) {
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+    }
+
+}
+
+.c-dave-and-drew {
+    background-image: url('/assets/background.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: relative;
+    filter: sepia(60%);
+
+    &__title-container {
+        color: $rotatingFontColor;
+
+        @media all and (min-width: $large) {
+            position: absolute;
+            bottom: $global-spacer * 2;
+            left: $global-spacer * 4;
+        }
+    }
+
+    &__title {
+        padding-bottom: $global-spacer;
+    }
+
+    &__date,
+    &__location {
+        padding-bottom: $global-spacer / 2;
+    }
 }
 
 .c-footer {
@@ -202,4 +254,15 @@ p {
     text-align: center;
     background-color: $rotatingBgColor;
     color: $rotatingFontColor;
+
+    &__link {
+        text-decoration: none;
+        color: $offwhite;
+
+        &:hover {
+            text-decoration: underline;
+            color: $offwhite;
+            cursor: pointer;
+        }
+    }
 }

@@ -3,7 +3,8 @@
 
     "globals": {
         "document": true,
-        "$": true
+        "$": true,
+        "SweetScroll": true
     },
 
     "rules": {
