@@ -12,9 +12,10 @@ $blue: #bdcdd0;
 $navy: #5d6b8c;
 
 $charcoal: #42403a;
-$tan: #807C68;
+$tan: #807c68;
 
 $global-spacer: 20px;
+$sectionMinHeight: 500px;
 $small: 0;
 $medium: 660px;
 $large: 1024px;
@@ -103,6 +104,16 @@ p {
         padding: $global-spacer ($global-spacer * 3);
     }
 
+}
+
+@mixin text-padding {
+    padding-left: $global-spacer;
+    padding-right: $global-spacer;
+
+    @media all and (min-width: $medium) {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
 }
 
 .c-aside {
@@ -195,7 +206,7 @@ p {
     }
 
     &--entry {
-        min-height: 500px;
+        min-height: $sectionMinHeight;
 
         &:nth-of-type(2n) {
             background-color: $rotatingBgColor;
@@ -210,13 +221,7 @@ p {
     }
 
     &__text {
-        padding-left: $global-spacer;
-        padding-right: $global-spacer;
-
-        @media all and (min-width: $medium) {
-            padding-left: 20%;
-            padding-right: 20%;
-        }
+        @include text-padding;
     }
 
 }
@@ -246,6 +251,53 @@ p {
     &__date,
     &__location {
         padding-bottom: $global-spacer / 2;
+    }
+}
+
+.c-proposal {
+    padding: 0;
+    color: $rotatingFontColor !important;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    filter: sepia(60%);
+    animation: imageAnimation 36s ease-in-out infinite;
+
+    &__content {
+        @include block-padding;
+        @include text-padding;
+        min-height: $sectionMinHeight;
+        background-color: rgba($tan, 0.75);
+    }
+}
+
+@keyframes imageAnimation {
+    0% {
+        background-image: url(/assets/slideshow/DrewDave-103.jpg);
+    }
+
+    16% {
+        background-image: url(/assets/slideshow/DrewDave-107.jpg);
+    }
+
+    33% {
+        background-image: url(/assets/slideshow/DrewDave-108.jpg);
+    }
+
+    50% {
+        background-image: url(/assets/slideshow/DrewDave-113.jpg);
+    }
+
+    66% {
+        background-image: url(/assets/slideshow/DrewDave-121.jpg);
+    }
+
+    73% {
+        background-image: url(/assets/slideshow/DrewDave-127.jpg);
+    }
+
+    100% {
+        background-image: url(/assets/slideshow/DrewDave-103.jpg);
     }
 }
 

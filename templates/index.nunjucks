@@ -1,6 +1,16 @@
 {% extends "templates/layouts/layout.nunjucks" %}
 
 {% block body %}
+    <div style="display: none;">
+        <img src="/assets/slideshow/DrewDave-103.jpg" />
+        <img src="/assets/slideshow/DrewDave-107.jpg" />
+        <img src="/assets/slideshow/DrewDave-108.jpg" />
+        <img src="/assets/slideshow/DrewDave-113.jpg" />
+        <img src="/assets/slideshow/DrewDave-121.jpg" />
+        <img src="/assets/slideshow/DrewDave-127.jpg" />
+        <img src="/assets/slideshow/DrewDave-103.jpg" />
+    </div>
+
     <div class="c-site-wrap" id="site-wrap">
         <aside class="c-aside">
             <nav class="c-nav">
@@ -62,14 +72,16 @@
             </p>
         </section>
 
-        <section class="c-section c-section--entry c-section__text" id="proposal">
-            <h1>The Proposal</h1>
-            <p>
-                Church-key street art crucifix poke, retro distillery leggings heirloom. Celiac gluten-free hoodie, mlkshk man braid listicle af adaptogen aesthetic. Lo-fi iPhone pug, butcher VHS selfies post-ironic unicorn bicycle rights wayfarers marfa. Bushwick you probably haven't heard of them try-hard godard, art party selvage truffaut locavore blog mixtape chicharrones YOLO dreamcatcher. Man braid kinfolk wolf, health goth tumblr cronut flannel hella hammock man bun. Art party try-hard before they sold out kickstarter whatever etsy, VHS keytar man bun kinfolk irony pork belly wolf meggings. Fanny pack man bun austin banjo air plant twee fam small batch everyday carry meh fashion axe ennui tacos. Blue bottle fam church-key, deep v selvage hot chicken portland mumblecore meh meditation bespoke.
-            </p>
-            <p>
-                Polaroid readymade taxidermy, mumblecore distillery drinking vinegar 90's banh mi sustainable ennui austin brooklyn viral four loko flannel. Lumbersexual kogi meditation, intelligentsia poke +1 iPhone gastropub. DIY messenger bag swag kogi, pug four dollar toast hella fashion axe. Ennui listicle chambray cray distillery, fanny pack asymmetrical. Hoodie DIY lo-fi squid 3 wolf moon, cred unicorn umami. Humblebrag truffaut sriracha, lomo try-hard hammock waistcoat keytar sartorial.
-            </p>
+        <section class="c-section c-section--entry c-section__text c-proposal c-slideshow__wrapper" id="proposal">
+            <div class="c-proposal__content">
+                <h1>The Proposal</h1>
+                <p>
+                    Church-key street art crucifix poke, retro distillery leggings heirloom. Celiac gluten-free hoodie, mlkshk man braid listicle af adaptogen aesthetic. Lo-fi iPhone pug, butcher VHS selfies post-ironic unicorn bicycle rights wayfarers marfa. Bushwick you probably haven't heard of them try-hard godard, art party selvage truffaut locavore blog mixtape chicharrones YOLO dreamcatcher. Man braid kinfolk wolf, health goth tumblr cronut flannel hella hammock man bun. Art party try-hard before they sold out kickstarter whatever etsy, VHS keytar man bun kinfolk irony pork belly wolf meggings. Fanny pack man bun austin banjo air plant twee fam small batch everyday carry meh fashion axe ennui tacos. Blue bottle fam church-key, deep v selvage hot chicken portland mumblecore meh meditation bespoke.
+                </p>
+                <p>
+                    Polaroid readymade taxidermy, mumblecore distillery drinking vinegar 90's banh mi sustainable ennui austin brooklyn viral four loko flannel. Lumbersexual kogi meditation, intelligentsia poke +1 iPhone gastropub. DIY messenger bag swag kogi, pug four dollar toast hella fashion axe. Ennui listicle chambray cray distillery, fanny pack asymmetrical. Hoodie DIY lo-fi squid 3 wolf moon, cred unicorn umami. Humblebrag truffaut sriracha, lomo try-hard hammock waistcoat keytar sartorial.
+                </p>
+            </div>
         </section>
 
         <section class="c-section c-section--entry" id="wedding">
