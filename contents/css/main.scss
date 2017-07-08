@@ -86,11 +86,30 @@ p {
     line-height: 1.4rem;
 }
 
+a {
+    text-decoration: none;
+    color: $offwhite;
+
+    &:hover {
+        text-decoration: underline;
+        color: $offwhite;
+        cursor: pointer;
+    }
+}
+
 .u-bold {
     font-weight: 700;
 }
 
 .c-site-wrap {
+}
+
+@mixin clearfix() {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 @mixin block-padding() {
@@ -270,6 +289,49 @@ p {
     }
 }
 
+.c-wedding {
+    @include clearfix;
+
+    &__title {
+        margin-bottom: $global-spacer * 2;
+    }
+
+    &__img {
+        width: 100%;
+        margin: 0 auto;
+        visibility: hidden;
+
+        &-wrap {
+            background-image: url(../assets/community-house.jpg);
+            float: left;
+            clear: left;
+            width: 30%;
+            margin: $global-spacer * 2 35%;
+            padding: 0;
+            box-shadow: 0 0 10px 0 $rotatingBgColor inset;
+            background-size: cover;
+            border-radius: 50%;
+        }
+    }
+
+    &__when {
+        float: left;
+        padding-left: 20%;
+        width: 50%;
+
+        p {
+            line-height: 2rem;
+        }
+    }
+
+    &__where {
+        float: left;
+        padding-right: 20%;
+        width: 50%;
+        border-left: 2px solid $rotatingFontColor;
+    }
+}
+
 @keyframes imageAnimation {
     0% {
         background-image: url(../assets/slideshow/DrewDave-103.jpg);
@@ -305,15 +367,4 @@ p {
     text-align: center;
     background-color: $rotatingBgColor;
     color: $rotatingFontColor;
-
-    &__link {
-        text-decoration: none;
-        color: $offwhite;
-
-        &:hover {
-            text-decoration: underline;
-            color: $offwhite;
-            cursor: pointer;
-        }
-    }
 }

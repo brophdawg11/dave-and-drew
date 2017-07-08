@@ -84,8 +84,35 @@
             </div>
         </section>
 
-        <section class="c-section c-section--entry" id="wedding">
-            <h1>The Wedding</h1>
+        <section class="c-section c-section--entry c-wedding" id="wedding">
+            <h1 class="c-wedding__title">The Wedding</h1>
+
+            <div class="c-wedding__when">
+                <p>
+                    March 3, 2018<br/>
+                    1:00pm
+                </p>
+            </div>
+
+            <div class="c-wedding__where">
+                <p>
+                    <a href="http://thecommunityhouse.com/" title="The Community House">
+                        The Community House<!--
+                    --></a>
+                    <br/>
+                    16 East Main Street<br/>
+                    Moorestown, NJ 08057
+                </p>
+            </div>
+
+            <div class="c-wedding__img-wrap">
+
+                <img class="c-wedding__img"
+                     src="assets/community-house.jpg"
+                     alt="The Community House" />
+
+            </div>
+
         </section>
 
         <section class="c-section c-section--entry" id="bridal-party">
@@ -93,7 +120,7 @@
         </section>
 
         <section class="c-section c-section--entry" id="directions">
-            <h1>Getting There</h1>
+            <h1>Accomodations</h1>
         </section>
 
         <section class="c-section c-section--entry" id="registry">
