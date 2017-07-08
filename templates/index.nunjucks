@@ -119,8 +119,32 @@
             <h1>The Bridal Party</h1>
         </section>
 
-        <section class="c-section c-section--entry" id="directions">
-            <h1>Accomodations</h1>
+        <section class="c-section c-section--entry c-accomodations" id="directions">
+            <h1 class="c-accomodations__title">Accomodations</h1>
+            <div class="c-accomodations__hotel">
+                <p>
+                    <a href="http://www.aloftmountlaurel.com/">
+                        Aloft Mount Laurel<!--
+                    --></a>
+                    <br/>
+                    558 Fellowship Road<br/>
+                    Mount Laurel, NJ 08054<br/>
+                    <a class="u-underline"
+                       href="https://www.starwoodmeeting.com/events/start.action?id=1707058783&key=14568941">
+                        Reserve<!--
+                    --></a>
+                </p>
+            </div>
+
+            <div class="c-accomodations__info">
+                <p>
+                    An after party will be hosted at Miller's Ale House, next door to the Aloft hotel
+                </p>
+                <p class="u-italic">
+                    Note: Cheaper rates are available at the Aloft hotel for Marriott Rewards members
+                </p>
+            </div>
+
         </section>
 
         <section class="c-section c-section--entry" id="registry">

@@ -97,6 +97,14 @@ a {
     }
 }
 
+.u-underline {
+    text-decoration: underline;
+}
+
+.u-italic {
+    font-style: italic;
+}
+
 .u-bold {
     font-weight: 700;
 }
@@ -311,6 +319,7 @@ a {
             box-shadow: 0 0 10px 0 $rotatingBgColor inset;
             background-size: cover;
             border-radius: 50%;
+            filter: sepia(60%);
         }
     }
 
@@ -330,6 +339,21 @@ a {
         width: 50%;
         border-left: 2px solid $rotatingFontColor;
     }
+}
+
+.c-accomodations {
+
+    &__title {
+        margin-bottom: $global-spacer * 2;
+    }
+
+    &__hotel {
+        margin-bottom: $global-spacer * 2;
+    }
+
+    &__info {
+    }
+
 }
 
 @keyframes imageAnimation {
