@@ -313,31 +313,58 @@ a {
             background-image: url(../assets/community-house.jpg);
             float: left;
             clear: left;
-            width: 30%;
-            margin: $global-spacer * 2 35%;
+            width: 60%;
+            margin: 0 20% $global-spacer * 2;
             padding: 0;
             box-shadow: 0 0 10px 0 $rotatingBgColor inset;
             background-size: cover;
             border-radius: 50%;
             filter: sepia(60%);
+
+            @media all and (min-width: $medium) {
+                width: 30%;
+                margin: $global-spacer * 2 35%;
+            }
         }
     }
 
     &__when {
-        float: left;
-        padding-left: 20%;
-        width: 50%;
+        padding: $global-spacer * 2 10%;
+
+        @media all and (min-width: $medium) {
+            float: left;
+            padding-left: 10%;
+            width: 50%;
+        }
+
+        @media all and (min-width: $large) {
+            padding-left: 20%;
+        }
 
         p {
             line-height: 2rem;
+            padding-bottom: 0;
         }
     }
 
     &__where {
-        float: left;
-        padding-right: 20%;
-        width: 50%;
-        border-left: 2px solid $rotatingFontColor;
+        border-top: 2px solid $rotatingFontColor;
+        padding: $global-spacer * 2 10%;
+        width: 80%;
+        margin: 0 10%;
+
+        @media all and (min-width: $medium) {
+            float: left;
+            margin: 0;
+            padding-right: 10%;
+            width: 50%;
+            border-top: none;
+            border-left: 2px solid $rotatingFontColor;
+        }
+
+        @media all and (min-width: $large) {
+            padding-right: 20%;
+        }
     }
 }
 
