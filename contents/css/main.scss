@@ -524,6 +524,43 @@ a {
 
 }
 
+.c-registry {
+    @include clearfix();
+
+    @media all and (min-width: $medium) {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    &__entry {
+        @include clearfix();
+        padding: 0 10%;
+        width: 60%;
+        margin: $global-spacer * 2 20%;
+
+        @media all and (min-width: $medium) {
+            float: left;
+            width: 50%;
+            margin: $global-spacer * 2 0;
+        }
+
+        &--bed-bath-beyond {
+            @media all and (min-width: $medium) {
+                padding-top: $global-spacer / 2;
+            }
+        }
+
+        a {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
 .c-footer {
     @include block-padding;
     text-align: center;
