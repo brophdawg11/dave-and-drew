@@ -210,6 +210,14 @@ a {
     @include block-padding;
     text-align: center;
 
+    h1 {
+        font-size: 1.75rem;
+
+        @media all and (min-width: $medium) {
+            font-size: 3rem;
+        }
+    }
+
     &--head {
         height: 200px;
         padding-left: 0;
@@ -321,7 +329,11 @@ a {
 
     &__dave,
     &__drew {
-        padding: $global-spacer;
+        padding: $global-spacer 0;
+
+        @media all and (min-width: $medium) {
+            padding: $global-spacer;
+        }
 
         @media all and (min-width: $large) {
             margin-top: $global-spacer * 2;
@@ -352,16 +364,55 @@ a {
 .c-proposal {
     padding: 0;
     color: $rotatingFontColor !important;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: none;
     filter: sepia(60%);
-    animation: imageAnimation 36s ease-in-out infinite;
+
+    @media all and (max-width: $large - 1px) {
+        background-position: 50% 0;
+        background-repeat: repeat-y;
+        background-image: url(../assets/mobile-skinny.jpg);
+    }
+
+    @media all and (min-width: $large) {
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        animation: imageAnimation 36s ease-in-out infinite;
+    }
 
     &__content {
         @include clearfix;
         @include block-padding;
         background-color: rgba($tan, 0.75);
+    }
+}
+
+@keyframes imageAnimation {
+    0% {
+        background-image: url(../assets/slideshow/DrewDave-103.jpg);
+    }
+
+    16% {
+        background-image: url(../assets/slideshow/DrewDave-107.jpg);
+    }
+
+    33% {
+        background-image: url(../assets/slideshow/DrewDave-108.jpg);
+    }
+
+    50% {
+        background-image: url(../assets/slideshow/DrewDave-113.jpg);
+    }
+
+    66% {
+        background-image: url(../assets/slideshow/DrewDave-121.jpg);
+    }
+
+    73% {
+        background-image: url(../assets/slideshow/DrewDave-127.jpg);
+    }
+
+    100% {
+        background-image: url(../assets/slideshow/DrewDave-103.jpg);
     }
 }
 
@@ -471,36 +522,6 @@ a {
     &__info {
     }
 
-}
-
-@keyframes imageAnimation {
-    0% {
-        background-image: url(../assets/slideshow/DrewDave-103.jpg);
-    }
-
-    16% {
-        background-image: url(../assets/slideshow/DrewDave-107.jpg);
-    }
-
-    33% {
-        background-image: url(../assets/slideshow/DrewDave-108.jpg);
-    }
-
-    50% {
-        background-image: url(../assets/slideshow/DrewDave-113.jpg);
-    }
-
-    66% {
-        background-image: url(../assets/slideshow/DrewDave-121.jpg);
-    }
-
-    73% {
-        background-image: url(../assets/slideshow/DrewDave-127.jpg);
-    }
-
-    100% {
-        background-image: url(../assets/slideshow/DrewDave-103.jpg);
-    }
 }
 
 .c-footer {
