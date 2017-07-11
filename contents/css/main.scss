@@ -1,5 +1,5 @@
 @import './reset';
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,800');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Serif:400,700');
 
 // Named Colors
 $orange: #f28a49;
@@ -27,8 +27,8 @@ $sideNavLinks: $offwhite;
 
 // Fonts
 //$header-font: 'Open Sans', Helvetica, sans-serif;
-$header-font: 'Lora', 'Times New Roman', serif;
-$body-font: 'Lora', 'Times New Roman', serif;
+$header-font: 'PT Sans Caption', 'Arial', serif;
+$body-font: 'PT Serif', 'Times New Roman', serif;
 
 
 * {
@@ -47,7 +47,9 @@ h3,
 h4,
 h5,
 h6 {
+    text-transform: uppercase;
     font-family: $header-font;
+    letter-spacing: 1px;
 }
 
 h1 {
@@ -309,6 +311,9 @@ a {
     }
 
     &__subtitle {
+        font-family: $body-font;
+        text-transform: none;
+        text-decoration: underline;
         font-size: 1.25rem;
         font-style: italic;
         text-align: center;
@@ -411,7 +416,7 @@ a {
     }
 
     &__where {
-        border-top: 2px solid $rotatingFontColor;
+        border-top: 1px solid $rotatingFontColor;
         padding: $global-spacer * 2 10%;
         width: 80%;
         margin: 0 10%;
@@ -422,7 +427,7 @@ a {
             padding-right: 10%;
             width: 50%;
             border-top: none;
-            border-left: 2px solid $rotatingFontColor;
+            border-left: 1px solid $rotatingFontColor;
         }
 
         @media all and (min-width: $large) {
@@ -443,7 +448,7 @@ a {
         }
 
         p {
-            font-weight: bold;
+            font-weight: 700;
             padding-bottom: 0;
         }
 
