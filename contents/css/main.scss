@@ -280,6 +280,52 @@ a {
     }
 }
 
+.c-story,
+.c-proposal,
+.c-bridal-party {
+    @include clearfix;
+    text-align: justify;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-size: 1.25rem;
+        font-style: italic;
+        text-align: center;
+    }
+
+    &__dave,
+    &__drew {
+        padding: $global-spacer;
+
+        @media all and (min-width: $large) {
+            margin-top: $global-spacer * 2;
+            float: left;
+            width: 50%;
+        }
+    }
+
+    &__dave {
+        @media all and (min-width: $large) {
+            padding: $global-spacer $global-spacer * 2 $global-spacer $global-spacer * 4;
+        }
+    }
+
+    &__drew {
+        border-top: 1px solid $rotatingFontColor;
+
+        @media all and (min-width: $large) {
+            padding: $global-spacer $global-spacer * 4 $global-spacer $global-spacer * 2;
+            border-top: none;
+            border-left: 1px solid $rotatingFontColor;
+        }
+
+    }
+
+}
+
 .c-proposal {
     padding: 0;
     color: $rotatingFontColor !important;
@@ -290,9 +336,8 @@ a {
     animation: imageAnimation 36s ease-in-out infinite;
 
     &__content {
+        @include clearfix;
         @include block-padding;
-        @include text-padding;
-        min-height: $sectionMinHeight;
         background-color: rgba($tan, 0.75);
     }
 }
@@ -364,6 +409,28 @@ a {
 
         @media all and (min-width: $large) {
             padding-right: 20%;
+        }
+    }
+}
+
+.c-bridal-party {
+
+    &__dave,
+    &__drew {
+        text-align: center;
+        border-color: $rotatingBgColor;
+
+        li {
+            padding-bottom: $global-spacer;
+        }
+
+        p {
+            font-weight: bold;
+            padding-bottom: 0;
+        }
+
+        span {
+            font-style: italic;
         }
     }
 }
