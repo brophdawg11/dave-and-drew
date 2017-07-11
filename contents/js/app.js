@@ -4,7 +4,7 @@ let isScrolling = false;
 function setActiveNavLinks() {
     const scroll = $document.scrollTop();
     let currentEl = $('.c-section')[0];
-    document.querySelectorAll('.c-section').forEach((el) => {
+    $.each(document.querySelectorAll('.c-section'), (i, el) => {
         const $el = $(el);
         const top = $el.position().top;
         const buffer = $(window).height() * 0.25;
@@ -12,23 +12,32 @@ function setActiveNavLinks() {
         document.querySelector(`[href="#${el.id}"]`).classList.remove('active');
         if (scroll + buffer >= top) {
             currentEl = el;
+        } else {
+            return false;
         }
+
+        return true;
     });
     document.querySelector(`[href="#${currentEl.id}"]`).classList.add('active');
 }
 
 function alignTop() {
     const $top = $('#top');
-    const $daveAndDrew = $('#dave-and-drew');
     const scroll = $document.scrollTop();
-    const offset = Math.round(scroll / 2);
     const height = $top.height();
-    const opacity = (height - scroll) / height;
-    const backgroundPosition = `0 ${offset}px`;
-    $top.css({ backgroundPosition });
-    $daveAndDrew.css({ opacity });
+
+    // Only perform the update if still in the viewport
+    if (scroll < height) {
+        const $daveAndDrew = $('#dave-and-drew');
+        const offset = Math.round(scroll / 2);
+        const opacity = (height - scroll) / height;
+        const backgroundPosition = `0 ${offset}px`;
+        $top.css({ backgroundPosition });
+        $daveAndDrew.css({ opacity });
+    }
 }
 
+/*
 function alignProposal() {
     const scroll = $document.scrollTop();
     const $proposal = $('#proposal');
@@ -49,16 +58,17 @@ function alignProposal() {
 
     $proposal.css({ backgroundPosition });
 }
+*/
 
 function setupParallax() {
-    $document.scroll(() => {
-        alignTop();
-        alignProposal();
+    $document.scroll(() =>
+        window.requestAnimationFrame(() => {
+            alignTop();
 
-        if (!isScrolling) {
-            setActiveNavLinks();
-        }
-    });
+            if (!isScrolling) {
+                setActiveNavLinks();
+            }
+        }));
 }
 
 function setupNavScroll() {
@@ -87,7 +97,6 @@ function onReady() {
     setupLinkClicks();
     setActiveNavLinks();
     alignTop();
-    alignProposal();
 }
 
 $document.ready(onReady);
