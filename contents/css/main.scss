@@ -194,6 +194,8 @@ a {
     }
 
     &__title {
+        font-family: $header-font;
+        font-size: 0.8rem;
         color: $sideNavLinks;
         white-space: nowrap;
         text-decoration: none;
