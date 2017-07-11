@@ -29,8 +29,9 @@ function alignTop() {
     // Only perform the update if still in the viewport
     if (scroll < height) {
         const $daveAndDrew = $('#dave-and-drew');
-        const offset = Math.round(scroll / 2);
-        const opacity = (height - scroll) / height;
+        const dHeight = $daveAndDrew.height() * 3;
+        const offset = Math.round(scroll / 3);
+        const opacity = (dHeight - scroll) / dHeight;
         const backgroundPosition = `0 ${offset}px`;
         $top.css({ backgroundPosition });
         $daveAndDrew.css({ opacity });

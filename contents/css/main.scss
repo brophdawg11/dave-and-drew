@@ -15,7 +15,7 @@ $charcoal: #42403a;
 $tan: #807c68;
 
 $global-spacer: 20px;
-$sectionMinHeight: 500px;
+$sectionMinHeight: 400px;
 $small: 0;
 $medium: 660px;
 $large: 1024px;
@@ -261,22 +261,40 @@ a {
     filter: sepia(60%);
 
     &__title-container {
+        background-color: rgba($tan, 0.75);
+        width: 100%;
+        padding: $global-spacer / 2;
         color: $rotatingFontColor;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @media all and (min-width: $medium) {
+            top: $global-spacer * 2;
+        }
 
         @media all and (min-width: $large) {
-            position: absolute;
-            bottom: $global-spacer * 2;
-            left: $global-spacer * 4;
+            top: $global-spacer * 4;
         }
     }
 
     &__title {
-        padding-bottom: $global-spacer;
+        font-size: 1.5rem;
+        padding-bottom: 0;
+
+        @media all and (min-width: $medium) {
+            padding-bottom: $global-spacer / 2;
+        }
+
+        @media all and (min-width: $large) {
+            font-size: 2rem;
+            padding-bottom: $global-spacer;
+        }
     }
 
     &__date,
     &__location {
-        padding-bottom: $global-spacer / 2;
+        padding-bottom: 0;
     }
 }
 

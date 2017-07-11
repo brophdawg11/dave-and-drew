@@ -57,8 +57,7 @@
         <section class="c-section c-section--head c-dave-and-drew" id="top">
             <div class="c-dave-and-drew__title-container" id="dave-and-drew">
                 <h1 class="c-dave-and-drew__title">Dave & Drew</h1>
-                <p class="c-dave-and-drew__date">March 3, 2018</p>
-                <p class="c-dave-and-drew__location">Haddonfield, NJ</p>
+                <p class="c-dave-and-drew__date">March 3, 2018 | Haddonfield, NJ</p>
             </div>
         </section>
 
