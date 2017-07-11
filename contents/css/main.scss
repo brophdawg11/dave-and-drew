@@ -126,11 +126,11 @@ a {
     padding: $global-spacer $global-spacer;
 
     @media all and (min-width: $medium) {
-        padding: $global-spacer ($global-spacer * 2);
+        padding: ($global-spacer * 2) ($global-spacer * 2);
     }
 
     @media all and (min-width: $large) {
-        padding: $global-spacer ($global-spacer * 3);
+        padding: ($global-spacer * 2) ($global-spacer * 3);
     }
 
 }
