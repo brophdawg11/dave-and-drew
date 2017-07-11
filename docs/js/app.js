@@ -62,6 +62,11 @@ function alignProposal() {
 */
 
 function setupParallax() {
+    // None on mobile
+    if ($(window).width() < 1024) {
+        return;
+    }
+
     $document.scroll(() =>
         window.requestAnimationFrame(() => {
             alignTop();
@@ -70,6 +75,9 @@ function setupParallax() {
                 setActiveNavLinks();
             }
         }));
+
+    alignTop();
+    setActiveNavLinks();
 }
 
 function setupNavScroll() {
@@ -96,8 +104,6 @@ function onReady() {
     setupParallax();
     setupNavScroll();
     setupLinkClicks();
-    setActiveNavLinks();
-    alignTop();
 }
 
 $document.ready(onReady);
