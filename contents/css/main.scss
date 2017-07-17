@@ -529,8 +529,32 @@ a {
         margin-bottom: $global-spacer * 2;
     }
 
-    &__hotel {
+    &__hotels {
+        @include clearfix;
         margin-bottom: $global-spacer * 2;
+        @media all and (min-width: $medium) {
+            width: 90%;
+            margin-left: 5%;
+        }
+        @media all and (min-width: $large) {
+            width: 60%;
+            margin-left: 20%;
+        }
+    }
+
+    &__hotel {
+        padding-bottom: $global-spacer * 2;
+
+        @media all and (min-width: $medium) {
+            float: left;
+            width: 50%;
+            padding-left: $global-spacer / 2;
+            padding-right: $global-spacer / 2;
+        }
+    }
+
+    &__hotel-link {
+        text-transform: uppercase;
     }
 
     &__info {
