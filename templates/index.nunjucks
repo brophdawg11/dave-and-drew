@@ -3,12 +3,14 @@
 {% block body %}
     <div style="display: none;">
         <img src="assets/slideshow/DrewDave-103.jpg" />
-        <img src="assets/slideshow/DrewDave-107.jpg" />
-        <img src="assets/slideshow/DrewDave-108.jpg" />
-        <img src="assets/slideshow/DrewDave-113.jpg" />
-        <img src="assets/slideshow/DrewDave-121.jpg" />
-        <img src="assets/slideshow/DrewDave-127.jpg" />
-        <img src="assets/slideshow/DrewDave-103.jpg" />
+        <img src="assets/slideshow/DrewDave-106.jpg" />
+        <img src="assets/slideshow/DrewDave-110.jpg" />
+        <img src="assets/slideshow/DrewDave-116.jpg" />
+        <img src="assets/slideshow/DrewDave-117.jpg" />
+        <img src="assets/slideshow/DrewDave-120.jpg" />
+        <img src="assets/slideshow/DrewDave-126.jpg" />
+        <img src="assets/slideshow/DrewDave-132.jpg" />
+        <img src="assets/slideshow/DrewDave-136.jpg" />
     </div>
 
     <div class="c-site-wrap" id="site-wrap">
