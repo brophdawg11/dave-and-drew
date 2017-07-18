@@ -1,4 +1,4 @@
 ---
-title: Dave & Drew
+title: Dave + Drew
 layout: index.nunjucks
 ---
