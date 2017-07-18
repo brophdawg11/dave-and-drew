@@ -133,29 +133,47 @@
         <section class="c-section c-section--entry c-wedding" id="wedding">
             <h1 class="c-wedding__title">The Wedding</h1>
 
-            <div class="c-wedding__when">
-                <p>
-                    March 3, 2018<br/>
-                    1:00pm
-                </p>
-            </div>
+            <p class="c-wedding__when">
+                March 3, 2018, 2:00pm
+            </p>
 
-            <div class="c-wedding__where">
-                <p>
-                    <a href="http://thecommunityhouse.com/" title="The Community House">
-                        The Community House<!--
-                    --></a>
-                    <br/>
-                    16 East Main Street<br/>
-                    Moorestown, NJ 08057
-                </p>
-            </div>
+            <div class="c-wedding__where-outer">
 
-            <div class="c-wedding__img-wrap">
+                <div class="c-wedding__where c-wedding__where--left">
+                    <p>
+                        <a href="http://www.gracehaddonfield.org/" title="Grace Episcopal Church">
+                            Grace Episcopal Church<!--
+                        --></a>
+                        <br/>
+                        19 Kings Highway East<br/>
+                        Haddonfield, NJ 08033
+                    </p>
 
-                <img class="c-wedding__img"
-                     src="assets/community-house.jpg"
-                     alt="The Community House" />
+                    <div class="c-wedding__img-wrap">
+                        <img class="c-wedding__img"
+                             src="assets/church.jpg"
+                             alt="Grace Episcopal Church" />
+
+                    </div>
+                </div>
+
+                <div class="c-wedding__where c-wedding__where--right">
+                    <p>
+                        <a href="http://thecommunityhouse.com/" title="The Community House">
+                            The Community House<!--
+                        --></a>
+                        <br/>
+                        16 East Main Street<br/>
+                        Moorestown, NJ 08057
+                    </p>
+
+                    <div class="c-wedding__img-wrap">
+                        <img class="c-wedding__img"
+                             src="assets/community-house.jpg"
+                             alt="The Community House" />
+
+                    </div>
+                </div>
 
             </div>
 

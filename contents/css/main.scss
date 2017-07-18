@@ -443,37 +443,19 @@ a {
         visibility: hidden;
 
         &-wrap {
-            background-image: url(../assets/community-house.jpg);
             float: left;
             clear: left;
-            width: 60%;
-            margin: 0 20% $global-spacer * 2;
+            width: 100%;
+            margin: $global-spacer 0 0;
             padding: 0;
             box-shadow: 0 0 10px 0 $rotatingBgColor inset;
             background-size: cover;
             border-radius: 50%;
             filter: sepia(60%);
-
-            @media all and (min-width: $medium) {
-                width: 30%;
-                margin: $global-spacer * 2 35%;
-            }
         }
     }
 
     &__when {
-        padding: $global-spacer * 2 10%;
-
-        @media all and (min-width: $medium) {
-            float: left;
-            padding-left: 10%;
-            width: 50%;
-        }
-
-        @media all and (min-width: $large) {
-            padding-left: 20%;
-        }
-
         p {
             line-height: 2rem;
             padding-bottom: 0;
@@ -481,22 +463,56 @@ a {
     }
 
     &__where {
-        border-top: 1px solid $rotatingFontColor;
-        padding: $global-spacer * 2 10%;
-        width: 80%;
-        margin: 0 10%;
+        @include clearfix;
+        width: 100%;
+        margin: 0;
+        padding: $global-spacer;
+
+        @media all and (min-width: $medium - (($medium - $small) / 2)) {
+            width: 80%;
+            margin-left: 10%;
+            padding: $global-spacer $global-spacer * 2;
+        }
 
         @media all and (min-width: $medium) {
             float: left;
-            margin: 0;
-            padding-right: 10%;
             width: 50%;
-            border-top: none;
-            border-left: 1px solid $rotatingFontColor;
+            margin-left: 0%;
         }
 
-        @media all and (min-width: $large) {
-            padding-right: 20%;
+        &-outer {
+            @include clearfix;
+            width: 100%;
+            margin: 0;
+
+            @media all and (min-width: $medium) {
+                width: 80%;
+                margin: 0 10%;
+            }
+
+            @media all and (min-width: $large) {
+                width: 60%;
+                margin: 0 20%;
+            }
+        }
+
+        &--left {
+            .c-wedding__img-wrap {
+                background-image: url(../assets/church.jpg);
+            }
+        }
+
+        &--right {
+            border-top: 1px solid $rotatingFontColor;
+
+            @media all and (min-width: $medium) {
+                border-top: none;
+                border-left: 1px solid $rotatingFontColor;
+            }
+
+            .c-wedding__img-wrap {
+                background-image: url(../assets/community-house.jpg);
+            }
         }
     }
 }
