@@ -25,7 +25,7 @@ function alignTop() {
     const $top = $('#top');
     const scroll = $document.scrollTop();
     const height = $top.height();
-    const padding = -85;
+    const padding = $(window).width() >= 1300 ? -100 : -45;
 
     // Only perform the update if still in the viewport
     if (scroll < height) {
