@@ -19,6 +19,7 @@ $sectionMinHeight: 400px;
 $small: 0;
 $medium: 660px;
 $large: 1024px;
+$xlarge: 1300px;
 
 // Semantic Colors
 $rotatingBgColor: $charcoal;
@@ -221,20 +222,20 @@ a {
     }
 
     &--head {
-        height: 200px;
+        height: 250px;
         padding-left: 0;
         padding-right: 0;
 
         @media all and (min-width: $medium * 0.75) {
-            height: 300px;
+            height: 325px;
         }
 
         @media all and (min-width: $medium) {
-            height: 400px;
+            height: 450px;
         }
 
         @media all and (min-width: $medium + (($large - $medium) / 2)) {
-            height: 500px;
+            height: 550px;
         }
 
         @media all and (min-width: $large) {
@@ -268,9 +269,17 @@ a {
     background-image: url(../assets/background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-position: 0 -85px;
+    background-position: 0 0;
     position: relative;
     filter: sepia(60%);
+
+    @media all and (min-width: $large) {
+        background-position: 0 -45px;
+    }
+
+    @media all and (min-width: $xlarge) {
+        background-position: 0 -100px;
+    }
 
     &__title-container {
         background-color: rgba($tan, 0.75);
