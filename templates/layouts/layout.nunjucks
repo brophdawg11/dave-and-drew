@@ -23,7 +23,6 @@
         <meta name="twitter:description" content="{{ title }}" />
         <meta name="twitter:image" content="http://www.drewanddave.com/assets/site-image.jpg" />
 
-        <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/main.css" />
 
         {% block head %}{% endblock %}
