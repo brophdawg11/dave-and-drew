@@ -451,6 +451,16 @@ a {
             background-size: cover;
             border-radius: 50%;
             filter: sepia(60%);
+
+            @media all and (min-width: $medium) {
+                width: 60%;
+                margin: 0 20%;
+            }
+
+            @media all and (min-width: $large) {
+                width: 60%;
+                margin: 0 20%;
+            }
         }
     }
 
@@ -470,32 +480,31 @@ a {
         @media all and (min-width: $medium - (($medium - $small) / 2)) {
             width: 80%;
             margin-left: 10%;
-            padding: $global-spacer $global-spacer * 2;
+            padding: $global-spacer $global-spacer * 4;
         }
 
         @media all and (min-width: $medium) {
             float: left;
             width: 50%;
             margin-left: 0%;
+            padding: $global-spacer;
+        }
+
+        @media all and (min-width: $large) {
+            padding: $global-spacer $global-spacer * 2;
         }
 
         &-outer {
             @include clearfix;
             width: 100%;
             margin: 0;
-
-            @media all and (min-width: $medium) {
-                width: 80%;
-                margin: 0 10%;
-            }
-
-            @media all and (min-width: $large) {
-                width: 60%;
-                margin: 0 20%;
-            }
         }
 
         &--left {
+            @media all and (min-width: $large) {
+                padding-left: $global-spacer * 4;
+            }
+
             .c-wedding__img-wrap {
                 background-image: url(../assets/church.jpg);
             }
@@ -507,6 +516,10 @@ a {
             @media all and (min-width: $medium) {
                 border-top: none;
                 border-left: 1px solid $rotatingFontColor;
+            }
+
+            @media all and (min-width: $large) {
+                padding-right: $global-spacer * 4;
             }
 
             .c-wedding__img-wrap {

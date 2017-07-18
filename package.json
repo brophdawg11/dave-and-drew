@@ -4,11 +4,11 @@
   "description": "Dave and Drew's Wedding Website",
   "main": "index.js",
   "scripts": {
-    "build": "node index.js --prod",
+    "build": "node index.js --prod && git checkout -- docs/CNAME",
     "serve": "node index.js --serve --debug",
     "nodemon": "./node_modules/.bin/nodemon index.js --serve",
     "nodemon-debug": "./node_modules/.bin/nodemon index.js --serve --debug",
-    "clean": "rm -rf output/",
+    "clean": "rm -rf docs/",
     "nuke": "npm run clean && rm -rf node_modules && rm -rf .icon_cache && npm install",
     "lint": "eslint src/"
   },
