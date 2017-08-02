@@ -195,22 +195,17 @@ a {
     }
 
     &__title {
-        display: none;
-
         font-family: $header-font;
         font-size: 0.8rem;
         color: $sideNavLinks;
         white-space: nowrap;
         text-decoration: none;
+        display: inline-block;
         padding-right: 0;
         opacity: 0;
         transform: translateX(-100%);
         transition: opacity 250ms ease-in,
                     padding 250ms ease-in;
-
-        @media all and (min-width: $medium) {
-            display: inline-block;
-        }
     }
 }
 
