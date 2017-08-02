@@ -115,7 +115,9 @@ function onReady() {
     setupParallax();
     setupNavScroll();
     setupLinkClicks();
-    setupSlideshow();
 }
 
 $document.ready(onReady);
+
+// Load once images are loaded
+$(window).on('load', setupSlideshow);
