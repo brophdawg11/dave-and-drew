@@ -131,13 +131,14 @@
             <h1 class="c-wedding__title">The Wedding</h1>
 
             <p class="c-wedding__when">
-                March 3, 2018, 2:00pm
+                March 3, 2018
             </p>
 
             <div class="c-wedding__where-outer">
 
                 <div class="c-wedding__where c-wedding__where--left">
                     <p>
+                        2:00 pm<br/>
                         <a href="http://www.gracehaddonfield.org/"
                            title="Grace Episcopal Church"
                            target="_blank">
@@ -158,10 +159,11 @@
 
                 <div class="c-wedding__where c-wedding__where--right">
                     <p>
+                        6:00 pm<br/>
                         <a href="http://thecommunityhouse.com/"
                            title="The Community House"
                            target="_blank">
-                            The Community House<!--
+                            Moorestown Community House<!--
                         --></a>
                         <br/>
                         16 East Main Street<br/>
