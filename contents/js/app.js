@@ -102,9 +102,17 @@ function setupLinkClicks() {
 }
 
 function setupSlideshow() {
+    $('.c-photos__slider').on('beforeChange', (event) => {
+        $(event.target.querySelector('.slick-active')).css({ minHeight: 50 });
+        setTimeout(() => {
+            $(event.target.querySelector('.slick-active')).css({ minHeight: 1 });
+        });
+    });
+
     $('.c-photos__slider').slick({
         dots: true,
         infinite: true,
+        lazyLoad: 'progressive',
         slidesToShow: 1,
         slidesToScroll: 1,
     });
