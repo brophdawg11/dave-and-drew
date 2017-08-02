@@ -299,8 +299,9 @@
 
         <section class="c-section c-section--entry c-registry" id="registry">
             <h1>Registry</h1>
+
             <div class="c-registry__entry c-registry__entry--pottery-barn">
-                <a href="https://www.potterybarn.com/registry/mb5t7bhsmh/registry-list.html"
+                <a href="http://registered.at/drewanddave"
                    title="Pottery Barn"
                    target="_blank">
                     <img class="c-registry__image c-registry__image--pottery-barn"
@@ -309,8 +310,9 @@
                          title="Pottery Barn" />
                 </a>
             </div>
+
             <div class="c-registry__entry c-registry__entry--bed-bath-beyond">
-                <a href="https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&inventoryCallEnabled=true&registryId=544663777&pwsurl="
+                <a href="http://registered.at/drewanddave"
                    title="Bed Bath and Beyond"
                    target="_blank">
                     <img class="c-registry__image c-registry__image--bed-bath-beyond"
@@ -319,6 +321,15 @@
                          title="Bed Bath and Beyond" />
                 </a>
             </div>
+
+            <div class="c-registry__link">
+                <a href="http://registered.at/drewanddave"
+                   title="Dave and Drew's Registry"
+                   target="_blank">
+                   Click here to view the Registry<!--
+               --></a>
+            </div>
+
         </section>
 
         <footer class="c-footer">

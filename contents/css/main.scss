@@ -636,6 +636,14 @@ a {
         }
     }
 
+    &__link {
+        clear: both;
+
+        a {
+            color: $rotatingBgColor;
+        }
+    }
+
 }
 
 .c-footer {
