@@ -101,10 +101,21 @@ function setupLinkClicks() {
     });
 }
 
+function setupSlideshow() {
+    $('.c-photos__slider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+}
+
+
 function onReady() {
     setupParallax();
     setupNavScroll();
     setupLinkClicks();
+    setupSlideshow();
 }
 
 $document.ready(onReady);

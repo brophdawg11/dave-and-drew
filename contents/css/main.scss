@@ -537,6 +537,47 @@ a {
     }
 }
 
+.c-photos {
+    min-height: auto;
+
+    &__slider {
+        width: 80%;
+        margin: auto;
+
+        @media all and (min-width: $medium) {
+            width: 80%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            font-size: 50px;
+            opacity: 0.2;
+        }
+
+        .slick-next {
+            z-index: 100;
+            right: 35px;
+        }
+
+        .slick-prev {
+            z-index: 100;
+            left: 10px;
+        }
+
+        .slick-dots {
+            display: none !important;
+
+            @media all and (min-width: $medium) {
+                display: block;
+            }
+        }
+    }
+
+    img {
+
+    }
+}
+
 .c-bridal-party {
 
     &__dave,
@@ -649,6 +690,14 @@ a {
 .c-footer {
     @include block-padding;
     text-align: center;
-    background-color: $rotatingBgColor;
-    color: $rotatingFontColor;
+    background-color: rgba($tan, 0.75);
+    color: $rotatingBgColor;
+
+    &__link {
+        color: $rotatingBgColor;
+
+        &:hover {
+            color: $rotatingBgColor;
+        }
+    }
 }
