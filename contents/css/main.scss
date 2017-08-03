@@ -568,7 +568,7 @@ a {
             display: none !important;
 
             @media all and (min-width: $medium) {
-                display: block;
+                display: block !important;
             }
         }
     }
