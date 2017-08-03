@@ -567,8 +567,16 @@ a {
         .slick-dots {
             display: none !important;
 
-            @media all and (min-width: $medium) {
+            @media all and (min-width: $large) {
                 display: block !important;
+            }
+
+            li button:before {
+                color: $offwhite;
+            }
+
+            li.slick-active button:before {
+                color: $offwhite;
             }
         }
     }
