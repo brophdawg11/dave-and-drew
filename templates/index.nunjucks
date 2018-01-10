@@ -43,8 +43,8 @@
                         </a>
                     </li>
                     <li class="c-nav__item">
-                        <a class="c-nav__link" href="#directions" data-scroll>
-                            <span class="c-nav__title">Directions</span>
+                        <a class="c-nav__link" href="#accomodations" data-scroll>
+                            <span class="c-nav__title">Accomodations</span>
                         </a>
                     </li>
                     <li class="c-nav__item">
@@ -255,7 +255,7 @@
             </div>
         </section>
 
-        <section class="c-section c-section--entry c-accomodations" id="directions">
+        <section class="c-section c-section--entry c-accomodations" id="accomodations">
             <h1 class="c-accomodations__title">Accomodations</h1>
             <div class="c-accomodations__hotels">
                 <p class="c-accomodations__hotel">
@@ -293,10 +293,10 @@
 
             <div class="c-accomodations__info">
                 <p class="u-italic">
-                    Note: Aloft is a Starwood property which can be linked to your Marriott Rewards account.
+                    Transportation will be provided from the Aloft to and from the reception.
                 </p>
                 <p class="u-italic">
-                    If you book via the Marriott Rewards website, please make sure you call the hotel and tell them you reservation is with the Paolucci-Brophy wedding block so they can link up your reservation.
+                    Aloft is a Starwood property which can be linked to your Marriott Rewards account.  If you book via the Marriott Rewards website, please make sure you call the hotel and tell them you reservation is with the Paolucci-Brophy wedding block so they can link up your reservation.
                 </p>
             </div>
 
