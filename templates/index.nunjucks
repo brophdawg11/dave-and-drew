@@ -38,6 +38,11 @@
                         </a>
                     </li>
                     <li class="c-nav__item">
+                        <a class="c-nav__link" href="#map" data-scroll>
+                            <span class="c-nav__title">Map</span>
+                        </a>
+                    </li>
+                    <li class="c-nav__item">
                         <a class="c-nav__link" href="#registry" data-scroll>
                             <span class="c-nav__title">Registry</span>
                         </a>
@@ -242,6 +247,39 @@
 
         </section>
 
+        <section class="c-section c-section--entry c-map" id="map">
+            <h1 class="c-map__title">Map</h1>
+
+            <iframe class="c-map__iframe"
+                    src="https://www.google.com/maps/d/embed?mid=1HOk4Z6FjDOWcjQ3rV3zp4wdeSDK9dvx9">
+            </iframe>
+
+        </section>
+
+        <section class="c-section c-section--entry c-photos" id="photos">
+            <h1 class="c-bridal-party__title">Photos</h1>
+            <div class="c-photos__slider">
+                <img src="assets/photos/DrewDave-101-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-103-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-105-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-106-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-108-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-110-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-111-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-116-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-117-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-119-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-120-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-122-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-123-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-126-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-131-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-132-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-133-small.jpg" />
+                <img data-lazy="assets/photos/DrewDave-135-small.jpg" />
+            </div>
+        </section>
+
         <section class="c-section c-section--entry c-registry" id="registry">
             <h1>Registry</h1>
 
@@ -275,30 +313,6 @@
                --></a>
             </div>
 
-        </section>
-
-        <section class="c-section c-section--entry c-photos" id="photos">
-            <h1 class="c-bridal-party__title">Photos</h1>
-            <div class="c-photos__slider">
-                <img src="assets/photos/DrewDave-101-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-103-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-105-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-106-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-108-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-110-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-111-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-116-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-117-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-119-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-120-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-122-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-123-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-126-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-131-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-132-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-133-small.jpg" />
-                <img data-lazy="assets/photos/DrewDave-135-small.jpg" />
-            </div>
         </section>
 
         <section class="c-section c-section--entry c-story" id="story">

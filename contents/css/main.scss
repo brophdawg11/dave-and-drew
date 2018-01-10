@@ -650,6 +650,18 @@ a {
 
 }
 
+.c-map {
+
+    &__iframe {
+        width: 100%;
+        height: 480px;
+
+        @media all and (min-width: $medium) {
+            width: 80%;
+        }
+    }
+}
+
 .c-registry {
     @include clearfix();
 
